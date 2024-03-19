@@ -1,0 +1,187 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+body {
+  height: 100vh;
+  margin: auto;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.header-overlay {
+  height: 208px;
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: url("images/header.png");
+  background-position-y: 25%;
+  color: #fff;
+}
+
+.header-overlay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.movie-container,
+.watchlist {
+  height: 100%;
+}
+
+.movie-clip,
+.error-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+}
+
+.empty {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.poster {
+  width: 20%;
+  height: 20%;
+  border: 1px solid black;
+}
+
+.info {
+  padding: 0 20px;
+  align-self: center;
+}
+
+.sub-info {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.title {
+  max-width: 200px;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+.search-text,
+.search-btn {
+  border: 1px solid gray;
+  padding: 10px 5px;
+  z-index: 999;
+}
+
+.search-text {
+  width: 342px;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-btn {
+  width: 120px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.link {
+  display: flex;
+  align-self: center;
+  gap: 3px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.added-text {
+  align-self: center;
+}
+
+.add-btn,
+.remove-btn {
+  align-items: center;
+  gap: 5px;
+}
+
+.add-btn > img,
+.remove-btn > img {
+  cursor: pointer;
+}
+
+.remove-btn {
+  display: flex;
+}
+
+/* typography */
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+.header-overlay > p > a {
+  text-decoration: 0;
+  color: #fff;
+}
+
+.movie-clip > p,
+.error-text > p,
+.empty > h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #dfdddd;
+}
+
+.link > p {
+  font-weight: bold;
+  color: #000;
+}
+
+.added-text {
+  color: #f00;
+  font-weight: bold;
+  align-self: center;
+}
