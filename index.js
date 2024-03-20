@@ -52,7 +52,9 @@ async function renderMovies(movies) {
     // inserts movie list object data into HTML and enters it into the movie-container in the index.html
     movieContainer.innerHTML += `
         <div class="container" data-imdbID="${data.imdbID}">
-          <img src="${data.Poster}" class="poster">
+          <img src="${
+            data.Poster !== "N/A" ? data.Poster : "/images/clip.png"
+          }" class="poster">
           <div class="info">
             <div class="sub-info">
               <h2 class="title">${data.Title}</h2>
@@ -62,7 +64,7 @@ async function renderMovies(movies) {
               </div>
             </div>
             <div class="sub-info">
-              <p> ${data.Runtime} </p>
+              <p class="runtime"> ${data.Runtime} </p>
               <p> ${data.Genre} </p>
               <div id="button" class="add-btn" >
                 <img src="/images/plus.png" data-add="${data.imdbID}">
