@@ -53,7 +53,7 @@ async function renderMovies(movies) {
     movieContainer.innerHTML += `
         <div class="container" data-imdbID="${data.imdbID}">
           <img src="${
-            data.Poster !== "N/A" ? data.Poster : "/images/clip.png"
+            data.Poster !== "N/A" ? data.Poster : "/images/missing.png"
           }" class="poster">
           <div class="info">
             <div class="sub-info">
