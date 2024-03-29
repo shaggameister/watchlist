@@ -110,7 +110,7 @@ body {
 .search-box {
   display: flex;
   justify-content: center;
-  margin-top: -20px 10px 0 10px;
+  margin: -20px 20px 0 20px;
 }
 
 .search-text,
