@@ -122,6 +122,12 @@ async function handleAddClick(dataImdbID) {
   }
 }
 
+searchText.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    getMovies();
+  }
+});
+
 // listens for clicks on targets
 document.addEventListener("click", function (e) {
   if (e.target.id === "search-btn") {
