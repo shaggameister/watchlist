@@ -51,9 +51,9 @@ body {
 .movie-clip,
 .error-text {
   height: 100%;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center; */
+  justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }
