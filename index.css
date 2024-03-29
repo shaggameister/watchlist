@@ -86,6 +86,7 @@ body {
 }
 
 .sub-info {
+  margin: 10px 0;
   display: flex;
   align-items: center;
   gap: 25px;
