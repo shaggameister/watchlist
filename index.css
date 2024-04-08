@@ -230,7 +230,7 @@ p,
 @media screen and (min-width: 320px) {
   body {
     width: auto;
-    max-width: 100vw;
+    max-width: 80vw;
   }
 
   .header-overlay {
