@@ -50,13 +50,14 @@ async function renderMovies(movies) {
     );
     const data = await res.json();
     // inserts movie list object data into HTML and enters it into the movie-container in the index.html
+    document.getElementById("body").style.height = "100%";
     movieContainer.innerHTML += `
         <div class="container" data-imdbID="${data.imdbID}">
           <img src="${
             data.Poster !== "N/A" ? data.Poster : "/images/missing.png"
           }" class="poster">
           <div class="info">
-            <div class="sub-info">
+            <div class="top-info">
               <h2 class="title">${data.Title}</h2>
               <div class="stars">
                 <img src="/images/star.png">

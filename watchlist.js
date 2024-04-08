@@ -7,9 +7,8 @@ function renderWatchlist() {
     watchlist.innerHTML = `
         <div class="empty">
           <h2>Your watchlist is looking empty</h2>
-          <div class="link">
-            <a href="index.html"><img src="/images/plus.png"></i></a>
-            <p>Let's add some movies</p>
+          <div class="link" >
+            <a href="index.html"> <img src="/images/plus.png"> Let's add some movies</a>
           </div>
         </div>`;
 
@@ -22,7 +21,7 @@ function renderWatchlist() {
             data.Poster !== "N/A" ? data.Poster : "/images/missing.png"
           }" class="poster">
           <div class="info">
-            <div class="sub-info">
+            <div class="top-info">
               <h2 class="title">${data.Title}</h2>
               <div class="stars">
                 <img src="/images/star.png">
