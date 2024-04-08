@@ -229,8 +229,7 @@ p,
 /* ---------------------------- Media Querie 320/768 ----------------------------- */
 @media screen and (min-width: 320px) {
   body {
-    width: auto;
-    max-width: 80vw;
+    max-width: 100vw;
   }
 
   .header-overlay {
@@ -241,8 +240,7 @@ p,
 /* ---------------------------- Media Querie 769/1024 ----------------------------- */
 @media screen and (min-width: 769px) {
   body {
-    width: auto;
-    /* max-width: 769px; */
+    max-width: 80vh;
   }
   .header-overlay {
     flex-direction: row;
