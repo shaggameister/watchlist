@@ -8,7 +8,8 @@ function renderWatchlist() {
         <div class="empty">
           <h2>Your watchlist is looking empty</h2>
           <div class="link" >
-            <a href="index.html"> <img src="/images/plus.png"> Let's add some movies</a>
+            <i class="fa-solid fa-circle-plus"></i>
+            <a href="index.html"> Let's add some movies</a>
           </div>
         </div>`;
 

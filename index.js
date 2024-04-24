@@ -67,8 +67,8 @@ async function renderMovies(movies) {
             <div class="sub-info">
               <p class="runtime"> ${data.Runtime} </p>
               <p> ${data.Genre} </p>
-              <div id="button" class="add-btn" >
-                <img src="/images/plus.png" data-add="${data.imdbID}">
+              <div id="button" class="add-btn" data-add="${data.imdbID}">
+                <img src="/images/plus.png">
                 <p>Watchlist</p>
               </div>
               <span class="added-text">Added</span>
@@ -130,10 +130,22 @@ searchText.addEventListener("keypress", function (e) {
 });
 
 // listens for clicks on targets
+
+// document.addEventListener("click", function (e) {
+//   if (e.target.id === "search-btn") {
+//     getMovies(e);
+//   } else if (e.target.dataset.add) {
+//     console.log("clicked");
+//     handleAddClick(e.target.dataset.add);
+//   }
+// });
+
 document.addEventListener("click", function (e) {
+  const addTarget = e.target?.closest("[data-add]");
   if (e.target.id === "search-btn") {
     getMovies(e);
-  } else if (e.target.dataset.add) {
-    handleAddClick(e.target.dataset.add);
+  } else if (addTarget) {
+    console.log("clicked");
+    handleAddClick(addTarget.dataset.add);
   }
 });
